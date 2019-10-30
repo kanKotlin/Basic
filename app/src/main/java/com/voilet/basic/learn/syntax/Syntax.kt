@@ -14,6 +14,12 @@ fun main(args: Array<String>) {
     p.called("hhh")
 
     //字符串
+    listOf(1,2,3).forEach { foo(it) }
+
+    val arrayPerson = ArrayList<Person>()
+
+    println(arrayPerson::class.java)
+
 }
 //infix fun <A,B> A.to(that:B) :Pair<A,B> {
 //
@@ -26,3 +32,10 @@ class Person{
     }
 
 }
+
+fun foo(int:Int):Unit{
+    println(int)
+}
+
+fun foo2(int: Int)={
+    println(int)}

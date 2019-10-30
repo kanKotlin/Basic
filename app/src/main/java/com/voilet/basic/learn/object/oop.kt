@@ -17,13 +17,9 @@ internal class Bird(val weight:Double, val age:Int, private val color:String){
 
 class Bird2(age: Int){
 
-    val age:Int
-    init {
-        this.age =age
-    }
+    val age:Int = age
 
-    constructor(color: String):this(getAgebyColor(color)){
-    }
+    constructor(color: String):this(getAgebyColor(color))
 
 }
 //密封类
