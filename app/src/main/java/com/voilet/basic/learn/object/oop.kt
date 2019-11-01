@@ -25,7 +25,8 @@ class Bird2(age: Int){
 //密封类
 sealed class Bird3{
     open fun fly() = "I can fly"
-    class test: Bird3()
+
+        object test : Bird3()
 }
 
 private fun getAgebyColor(color: String): Int {
